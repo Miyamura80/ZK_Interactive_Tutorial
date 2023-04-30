@@ -9,8 +9,8 @@ contract SimpleMultiplierScript is Script {
     function setUp() public {}
 
     function run() public {
-        // uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
-        // vm.startBroadcast(deployerPrivateKey);
+        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
+        vm.startBroadcast(deployerPrivateKey);
         vm.startBroadcast();
 
         PlonkVerifier pv = new PlonkVerifier();
