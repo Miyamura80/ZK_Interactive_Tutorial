@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import TreeDiagram from '../components/TreeDiagram'
+
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -115,4 +118,45 @@ export default function Home() {
       </div>
     </main>
   )
+}
+
+const sampleData = {
+  name: 'Root',
+  children: [
+    {
+      name: 'Child 1',
+      children: [
+        { name: 'Grandchild 1' },
+        { name: 'Grandchild 2' },
+      ],
+    },
+    {
+      name: 'Child 2',
+      children: [
+        { name: 'Grandchild 3' },
+        { name: 'Grandchild 4' },
+      ],
+    },
+  ],
+};
+
+export default function Home() {
+  return (
+    <div className="container mx-auto px-4 py-10">
+      <Head>
+        <title>Next.js with Tailwind CSS and D3.js Tree Diagram</title>
+        <meta name="description" content="Next.js with Tailwind CSS and D3.js Tree Diagram" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main className="flex flex-col items-center justify-center w-full">
+        <h1 className="text-4xl font-bold mb-4">
+          Interactive and Live Updating Tree Diagram
+        </h1>
+        <div className="w-full max-w-4xl">
+          <TreeDiagram data={sampleData} />
+        </div>
+      </main>
+    </div>
+  );
 }
