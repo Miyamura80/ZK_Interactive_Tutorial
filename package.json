@@ -9,15 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.8",
+    "@mantine/core": "^6.0.9",
+    "@mantine/hooks": "^6.0.9",
+    "@mantine/notifications": "^6.0.9",
     "@types/node": "18.16.3",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
+    "axios": "^1.4.0",
+    "circomlib": "^2.0.5",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.2",
+    "ethers": "^5.7.2",
     "next": "13.3.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.4"
+    "snarkjs": "^0.6.10",
+    "typescript": "5.0.4",
+    "wagmi": "^0.12.12"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
