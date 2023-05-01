@@ -1,0 +1,28 @@
+{ input0: '3', input1: '2' }
+Generating vote proof with inputs: 3, 2
+Error: Error: Not all inputs have been set. Only 8 out of 9
+    at WitnessCalculatorCircom2._doCalculateWitness (file:///home/eitomiyamura/Github/ZK_Interactive_Tutorial/node_modules/circom_runtime/js/witness_calculator.js:439:19)
+    at WitnessCalculatorCircom2.calculateWTNSBin (file:///home/eitomiyamura/Github/ZK_Interactive_Tutorial/node_modules/circom_runtime/js/witness_calculator.js:463:20)
+    at wtnsCalculate (file:///home/eitomiyamura/Github/ZK_Interactive_Tutorial/node_modules/snarkjs/src/wtns_calculate.js:45:28)
+    at async Module.plonkFullProve (file:///home/eitomiyamura/Github/ZK_Interactive_Tutorial/node_modules/snarkjs/src/plonk_fullprove.js:31:5)
+    at async generateProof (webpack-internal:///(api)/./src/lib/generateProof.ts:43:44)
+    at async handler (webpack-internal:///(api)/./src/pages/api/generate_proof.ts:26:19)
+{ input0: '1', input1: '2' }
+Generating vote proof with inputs: 1, 2
+Error: Error: Not all inputs have been set. Only 8 out of 9
+    at WitnessCalculatorCircom2._doCalculateWitness (file:///home/eitomiyamura/Github/ZK_Interactive_Tutorial/node_modules/circom_runtime/js/witness_calculator.js:439:19)
+    at WitnessCalculatorCircom2.calculateWTNSBin (file:///home/eitomiyamura/Github/ZK_Interactive_Tutorial/node_modules/circom_runtime/js/witness_calculator.js:463:20)
+    at wtnsCalculate (file:///home/eitomiyamura/Github/ZK_Interactive_Tutorial/node_modules/snarkjs/src/wtns_calculate.js:45:28)
+    at async Module.plonkFullProve (file:///home/eitomiyamura/Github/ZK_Interactive_Tutorial/node_modules/snarkjs/src/plonk_fullprove.js:31:5)
+    at async generateProof (webpack-internal:///(api)/./src/lib/generateProof.ts:43:44)
+    at async handler (webpack-internal:///(api)/./src/pages/api/generate_proof.ts:26:19)
+{ input0: '1', input1: '' }
+{ input0: '1', input1: '1' }
+Generating vote proof with inputs: 1, 1
+Error: Error: Not all inputs have been set. Only 8 out of 9
+    at WitnessCalculatorCircom2._doCalculateWitness (file:///home/eitomiyamura/Github/ZK_Interactive_Tutorial/node_modules/circom_runtime/js/witness_calculator.js:439:19)
+    at WitnessCalculatorCircom2.calculateWTNSBin (file:///home/eitomiyamura/Github/ZK_Interactive_Tutorial/node_modules/circom_runtime/js/witness_calculator.js:463:20)
+    at wtnsCalculate (file:///home/eitomiyamura/Github/ZK_Interactive_Tutorial/node_modules/snarkjs/src/wtns_calculate.js:45:28)
+    at async Module.plonkFullProve (file:///home/eitomiyamura/Github/ZK_Interactive_Tutorial/node_modules/snarkjs/src/plonk_fullprove.js:31:5)
+    at async generateProof (webpack-internal:///(api)/./src/lib/generateProof.ts:43:44)
+    at async handler (webpack-internal:///(api)/./src/pages/api/generate_proof.ts:26:19)

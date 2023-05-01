@@ -6,10 +6,13 @@ import * as snarkjs from 'snarkjs';
 
 export const generateProof = async (input0: number, input1: number): Promise<any> => {
   console.log(`Generating vote proof with inputs: ${input0}, ${input1}`);
-  
+
   // We need to have the naming scheme and shape of the inputs match the .circom file
   const inputs = {
-    in: [input0, input1],
+    x: [input0, input1],
+    A: [[2, 1],
+        [3, 3],
+        [5, 5]],
   }
 
   // Paths to the .wasm file and proving key
@@ -24,7 +27,8 @@ export const generateProof = async (input0: number, input1: number): Promise<any
     const calldataBlob = await snarkjs.plonk.exportSolidityCallData(proof, publicSignals);
     const calldata = calldataBlob.split(',');
 
-    console.log(calldata);
+    // console.log(calldata);
+    console.log(`Calculated public output: ${JSON.parse(calldata[1])}`);
 
     return {
       proof: calldata[0], 
