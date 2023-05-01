@@ -9,3 +9,6 @@
 3. (From project root:) `snarkjs zkey export solidityverifier circuits/build/proving_key.zkey contracts/src/PlonkVerifier.sol`
 
 
+# Sources:
+
+- https://medium.com/coinmonks/zk-poker-a-simple-zk-snark-circuit-8ec8d0c5ee52
